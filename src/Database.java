@@ -5,7 +5,13 @@ import java.util.Map;
 
 public class Database {
 
-    static ArrayList<String> wordList = new ArrayList<String>();
+    static ArrayList<String> wordList = new ArrayList<String>(); // save all words
+    static ArrayList<String> wordListEasy = new ArrayList<String>(); // save only words with 5 or fewer letters
+    static ArrayList<String> wordListMedium = new ArrayList<String>(); // save words between 6-10 letters
+    static ArrayList<String> wordListDifficult = new ArrayList<String>(); // save words with more than 10 letters
+    static ArrayList<String> userSavedData = new ArrayList<>(); // save user's game data
+
+    // different hangman images are stored
     static HashMap<Integer, String> hangmanImages = new HashMap<>(Map.of(
             0,"  +---+\n" +
                     "  |   |\n" +
